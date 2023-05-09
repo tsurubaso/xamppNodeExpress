@@ -5,8 +5,11 @@
 </form>
 
 <div>
+    {{#each rows}}
     <p>
         The saved picture is shown behind this
     </p>
-    <img src="2.jpg" alt="should show something">
+    <img src="{{this.ImageName}}" alt="should show something">
+    <p>{{this.ImageName}}</p>
+    {{/each}}
 </div>
